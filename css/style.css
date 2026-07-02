@@ -96,13 +96,13 @@ body {
 
     left: 50%;
 
-    top: 50%;
+    bottom: 9vh;
 
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 
     width: min(90%,700px);
 
-    color: white;
+    color: #ffffff;
 
     text-align: center;
 
@@ -116,12 +116,14 @@ body {
 
     opacity: 0;
 
-    z-index: 10;
+    z-index: 20;
 
     text-shadow:
-        0 0 20px rgba(0,0,0,.55);
+        0 3px 15px rgba(0,0,0,.75);
 
     transition: opacity .8s ease;
+
+    pointer-events:none;
 
 }
 
