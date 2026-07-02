@@ -1,1 +1,112 @@
+/* =====================================
+   Mirror 2.0 Animations
+===================================== */
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+.fade-in {
+    animation: fadeIn .8s ease forwards;
+}
+
+
+.fade-out {
+    animation: fadeOut .8s ease forwards;
+}
+
+
+.show-message {
+
+    animation: fadeIn .9s ease forwards;
+
+}
+
+
+.hide-message {
+
+    animation: fadeOut .9s ease forwards;
+
+}
+
+
+.camera-visible {
+
+    opacity:1 !important;
+
+}
+
+
+.loading-hidden {
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+
+.overlay-visible {
+
+    opacity:1 !important;
+
+}
+
+
+.overlay-hidden {
+
+    opacity:0 !important;
+
+}
+
+
+.scale-in{
+
+    animation:
+
+        fadeIn .8s ease,
+
+        scaleIn .8s ease;
+
+}
+
+
+@keyframes scaleIn{
+
+    from{
+
+        transform:
+
+        translate(-50%,-50%)
+
+        scale(.95);
+
+    }
+
+    to{
+
+        transform:
+
+        translate(-50%,-50%)
+
+        scale(1);
+
+    }
+
+}
