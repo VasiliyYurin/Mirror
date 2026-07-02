@@ -1,0 +1,1 @@
+window.MODES={motivation:{text:"Этот человек способен изменить твою жизнь.",delay:1000,duration:2500},clean:{text:"",delay:0,duration:0}};

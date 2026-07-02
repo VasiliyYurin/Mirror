@@ -1,0 +1,3 @@
+const p=new URLSearchParams(location.search);const mode=window.MODES[p.get('mode')]||window.MODES.motivation;
+const video=document.getElementById('video'),msg=document.getElementById('message');
+setTimeout(async()=>{try{const s=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'},audio:false});video.srcObject=s;video.style.opacity=1;document.getElementById('overlay').style.display='none';if(mode.text){setTimeout(()=>{msg.textContent=mode.text;msg.style.opacity=1;setTimeout(()=>msg.style.opacity=0,mode.duration)},mode.delay)}}catch(e){msg.textContent='Разрешите доступ к камере и обновите страницу.';msg.style.opacity=1;}},700);
